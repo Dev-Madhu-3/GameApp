@@ -2,6 +2,7 @@
     "name": "match-game",
     "private": true,
     "version": "1.0.0",
+    "homepage": "https://Dev-Madhu-3.github.io/GameApp",
     "engines": {
         "node": "^10.13 || 12 || 14 || 15",
         "npm": ">=6"
@@ -33,7 +34,8 @@
         "lint:fix": "eslint --fix src/",
         "format": "prettier --write \"./src\"",
         "run-all": "npm-run-all --parallel test lint:fix",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d build",
+        "predeploy": "npm run build"
     },
     "lint-staged": {
         "*.js": [
