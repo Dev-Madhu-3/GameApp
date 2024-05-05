@@ -1,0 +1,12 @@
+.thumbnail-image {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.thumbnail-item {
+  border-width: 0px;
+  background-color: transparent;
+}
+*{
+  list-style: none;
+}
