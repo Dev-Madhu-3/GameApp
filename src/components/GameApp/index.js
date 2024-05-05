@@ -41,12 +41,14 @@ class GameApp extends Component {
     const randomNum = Math.floor(Math.random() * imagesList.length)
 
     this.setState({randomNum})
-    const {time} = this.state
+
     this.timer = setInterval(() => {
       this.setState(pre => ({time: pre.time - 1}))
+      const {time} = this.state
+
       if (time === 0) {
-        clearInterval(this.timer)
         this.setState({gameOver: true})
+        clearInterval(this.timer)
       }
     }, 1000)
   }
