@@ -79,7 +79,7 @@ class GameApp extends Component {
     const {imageUrl} = imagesList[randomNum]
     return (
       <>
-        <img className="display-image" src={imageUrl} alt="match" />
+        <img className="display-image" onClick={this.restart} src={imageUrl} alt="match" />
 
         <ul className="tab-con">
           {tabsList.map(each => (
